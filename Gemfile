@@ -1,0 +1,13 @@
+source('https://rubygems.org')
+
+gem('pg')
+gem('rspec')
+gem('capybara')
+gem('sinatra')
+gem('sinatra-contrib', :require => 'sinatra/reload')
+gem('sinatra-activerecord')
+gem('rake')
+gem('launchy')
+gem('pry')
+gem('guard')
+gem('guard-rspec')
