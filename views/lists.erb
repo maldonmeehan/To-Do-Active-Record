@@ -1,5 +1,10 @@
 <h1> Your current to-do lists:</h1>
 
+<% @lists.each() do |list| %>
+  <li><%= list.name %> <a href="/lists/<%= list.id() %>/edit">Update this list's name</a></li>
+<% end %>
+
+
 <% if @lists.any?() %>
   <ul>
     <% @lists.each() do |list| %>
