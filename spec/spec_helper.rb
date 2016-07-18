@@ -9,5 +9,8 @@ RSpec.configure do |config|
     Task.all().each() do |task|
       task.destroy()
     end
+    List.all().each() do |list|
+      list.destroy()
+    end
   end
 end
