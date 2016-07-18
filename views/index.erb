@@ -1,4 +1,24 @@
-<h1>Welcome to TO DO </h1>
+<h1>To Do</h1>
 
-<a href="/lists/new">Add a new list</a>
-<a href="/lists">View all added/saved lists</a>
+<p>Here are all your tasks:</p>
+
+<ul>
+  <% @tasks.not_done().each do |task| %>
+    <li><%= task.description %></li>
+  <% end %>
+  <% @tasks.each() do |task| %>
+    <li><%= task.description %> <a href="/tasks/<%= task.id() %>/edit">Update this task's description</a></li>
+  <% end %>
+</ul>
+
+
+
+<p> Create a new task:</p>
+
+<form action="/tasks" method="post">
+
+  <label for="description">Description</label>
+  <input id="description" name="description" type="text">
+
+  <button type="submit">Update</button>
+</form>
