@@ -47,9 +47,12 @@ end
 
 post("/tasks") do
   description = params.fetch("description")
-  task = Task.new({:description => description, :done => false})
-  task.save()
-  erb(:success)
+  @task = Task.new({:description => description, :done => false})
+  if @task.save()
+    erb(:success)
+  else
+    erb(:errors)
+  end
 end
 
 get('/tasks/:id/edit') do
