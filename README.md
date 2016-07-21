@@ -1,6 +1,6 @@
 ## Ruby Database with Active Record - To DO
 
-An app that lets people make a To Do list, July 19, 2016
+An app that lets people make a To Do list, July 21, 2016
 
 By Loren Posey & Maldon Meehan
 
