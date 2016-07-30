@@ -20,14 +20,14 @@ Install required gems:
 $ bundle install
 ```
 
-Run Postgress:
+Run Postgres:
 ```
 $ postgres
 ```
 
 Open a new window and run:
 ```
-$ postgres
+$ psql
 ```
 
 Open a new window and run:
