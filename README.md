@@ -10,7 +10,7 @@ Active Record exploration by building the To Do application from the weekend's l
 
 ## Setup/Installation Requirements
 
-Install *Stylish Salon* by cloning the repository.  
+Install by cloning the repository.  
 ```
 $ git clone https://github.com/maldonmeehan/To-Do-Active-Record.git
 ```
